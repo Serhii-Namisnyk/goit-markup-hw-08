@@ -1,0 +1,117 @@
+// .header .conteiner {
+//   display: flex;
+//   align-items: center;
+// }
+// /*================ heder decoration ==================*/
+// .portfolio-heder {
+//   border-bottom: 1px solid #ececec;
+// }
+
+// .nav-link {
+//   display: block;
+//   position: relative;
+//   color: var(--title-text-color);
+//   font-family: var(--main-font);
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+//   &::after {
+//     position: absolute;
+//     top: 43px;
+//     left: 0;
+//     bottom: 0;
+//     content: '';
+//     display: block;
+//     width: 100%;
+//     height: 4px;
+//     background-color: #2196f3;
+//     border-radius: 2px;
+//     transform: scaleX(0);
+//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }
+// .nav-link:hover::after {
+//   transform: scaleX(1);
+// }
+// .current-link {
+//   color: var(--accent-color);
+//   display: block;
+//   position: relative;
+//   font-family: var(--main-font);
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   &::after {
+//     position: absolute;
+//     top: 43px;
+//     left: 0;
+//     bottom: 0;
+//     content: '';
+//     display: block;
+//     width: 100%;
+//     height: 4px;
+//     background-color: #2196f3;
+//     border-radius: 2px;
+//   }
+// }
+
+// .contacts-link {
+//   display: inline-flex;
+//   align-items: center;
+//   color: var(--primaru-text-color);
+//   font-family: var(--main-font);
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+// .current {
+//   color: var(--accent-color);
+// }
+
+// .navigation {
+//   display: flex;
+//   align-items: center;
+// }
+// .site-nav {
+//   display: flex;
+// }
+// .contacts {
+//   display: flex;
+// }
+
+// .logo-nav {
+//   margin-right: 93px;
+// }
+// .site-nav-item:not(:last-child) {
+//   margin-right: 50px;
+// }
+// .contacts {
+//   margin-left: auto;
+// }
+// .contacts-item:not(:last-child) {
+//   margin-right: 50px;
+// }
+// .header {
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+// }
+// .contacts-icon {
+//   margin-right: 10px;
+//   fill: currentColor;
+// }
