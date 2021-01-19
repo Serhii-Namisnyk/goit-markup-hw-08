@@ -3,14 +3,16 @@
 // BASE
 @import './base/common';
 @import './base/container';
+
 // COMPONENTS
 @import './components/section';
-// LAYOUT
+// layout
+
 @import './layout/header';
 @import './layout/logo';
 @import './layout/hero';
 @import './layout/advantage';
-@import './layout/skils';
+@import './layout/skills';
 @import './layout/our-team';
 @import './layout/our-clients';
 @import './layout/portfolio-buttons';
