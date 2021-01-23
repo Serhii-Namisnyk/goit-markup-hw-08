@@ -115,3 +115,30 @@
 //   margin-right: 10px;
 //   fill: currentColor;
 // }
+
+@media screen and (max-width:768px){
+.site-nav{
+display: none;
+}
+.contacts{
+display: none;
+}
+.header{
+  padding-top: 10px;
+  padding-bottom:10px;
+}
+.navigation{
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+
+.header__button{
+  width: 40px;
+  margin: 0;
+  padding: 0;
+  display: inline-flex; 
+  border: none;
+  background-color: transparent;
+}
+}
