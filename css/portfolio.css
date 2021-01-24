@@ -1,3 +1,14 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
 :root {
   --primaru-text-color: #757575;
   --svg-icon-color: #afb1b8;
@@ -251,10 +262,10 @@ img {
     justify-content: space-between;
   }
   .logo-nav {
-    margin-right: 84px;
+    margin-right: 80px;
   }
   .site-nav {
-    margin-right: 84px;
+    margin-right: 80px;
     display: flex;
     align-items: center;
     font-family: Roboto;

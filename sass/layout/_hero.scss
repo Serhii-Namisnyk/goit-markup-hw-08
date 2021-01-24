@@ -22,7 +22,7 @@
       url('../images/hero-img/hero-fon-mobile@2x.jpg');
   }
 } 
-.hero.hero-title {
+.hero .hero-title {
   margin-bottom: 30px;
 }
 .hero-title {
@@ -60,34 +60,34 @@
   text-align: center;
 }
 @media screen and (min-width: 769px) {
-  .hero {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/hero-img/hero-fon-tab.jpg');
+  url('../images/hero-img/hero-fon-tab.jpg');
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 769px),
   screen and (min-resolution: 192dpi) and (min-width: 769px),
   screen and (min-resolution: 2dppx) and(min-width:769px) {
   .hero {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
+   background-image: linear-gradient(
+   rgba(47, 48, 58, 0.4),
+   rgba(47, 48, 58, 0.4)
       ),
-      url('../images/hero-img/hero-fon-tab@2x.jpg');
+    url('../images/hero-img/hero-fon-tab@2x.jpg');
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero {
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: linear-gradient(
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
@@ -95,10 +95,10 @@
   }
 }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    screen and (min-resolution: 192dpi) and (min-width: 1200px),
-    screen and (min-resolution: 2dppx) and(min-width:1200px) {
-    .hero {
-      background-image: linear-gradient(
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and(min-width:1200px) {
+.hero {
+  background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),

@@ -1,3 +1,14 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
 :root {
   --primaru-text-color: #757575;
   --svg-icon-color: #afb1b8;
@@ -251,10 +262,10 @@ img {
     justify-content: space-between;
   }
   .logo-nav {
-    margin-right: 84px;
+    margin-right: 80px;
   }
   .site-nav {
-    margin-right: 84px;
+    margin-right: 80px;
     display: flex;
     align-items: center;
     font-family: Roboto;
@@ -528,7 +539,7 @@ img {
   }
 }
 
-.hero.hero-title {
+.hero .hero-title {
   margin-bottom: 30px;
 }
 
@@ -1426,6 +1437,190 @@ img {
   }
   .footer-social-link {
     width: 206px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 250ms linear;
+  overflow-y: scroll;
+}
+
+.modal {
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-close-button {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: fill 250ms linear;
+}
+
+.close-button-svg:hover {
+  fill: var(--accent-color);
+}
+
+.modal_form-text {
+  margin-bottom: 30px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.input_svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill 250ms linear;
+}
+
+.modal_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal_input-wrapper {
+  position: relative;
+  display: block;
+  margin-top: 4px;
+}
+
+.modal_form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border-color 250ms linear;
+}
+
+.modal_form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal_form-input:focus + .input_svg {
+  fill: var(--accent-color);
+}
+
+.modal_form-field {
+  margin-bottom: 10px;
+}
+
+.modal_form-massage {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms linear;
+}
+
+.modal_form-massage:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal_form-policy-text::before {
+  display: block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid black;
+  content: '';
+  margin-right: 8px;
+}
+
+.modal_form-policy:checked + .modal_form-policy-text::before {
+  background-image: url(../images/icon/Check.svg);
+  background-color: var(--accent-color);
+  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.modal_form-policy-text {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 31px;
+  color: var(--primaru-text-color);
+  font-family: var(--main-font);
+}
+
+.modal_form-policy-link {
+  color: var(--accent-color);
+}
+
+.modal_form-button {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+}
+
+.policy_button {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
   }
 }
 /*# sourceMappingURL=main.css.map */
