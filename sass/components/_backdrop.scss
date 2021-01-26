@@ -151,12 +151,12 @@
 .policy_button {
   text-align: center;
 }
-@media screen and (min-width:768px){
+@media screen and (max-width:768px){
   .modal {
-  width: 450px; 
+  min-width: 450px; 
   }     
 }
-@media screen and (min-width:768px){
+@media screen and (min-width:769px){
   .modal {
   width: 528px;
   }

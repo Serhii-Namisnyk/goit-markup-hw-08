@@ -1417,6 +1417,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .filter {
+    text-align: left;
+  }
   .footer_form-email {
     width: 358px;
     margin-right: 12px;
@@ -1427,9 +1430,15 @@ img {
     align-items: baseline;
     justify-content: space-between;
   }
+  .footer-list {
+    text-align: left;
+  }
   .footer-contact {
     margin: 0;
-    text-align: center;
+    text-align: left;
+  }
+  .join-text {
+    text-align: left;
   }
   .footer_input {
     text-align: left;
@@ -1437,6 +1446,15 @@ img {
   }
   .footer-social-link {
     width: 206px;
+  }
+  .modal__policy-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: #757575;
   }
 }
 
@@ -1612,13 +1630,13 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .modal {
-    width: 450px;
+    min-width: 450px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .modal {
     width: 528px;
   }
